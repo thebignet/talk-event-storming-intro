@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/storm.jpg">
+					<h1>Event-Storming</h1>
+					<h2>Introduction</h2>
+				</section>
+				<section>
+					<h2>Mais qu'est-ce que c'est ?</h2>
+					<p>C'est un atelier qui permet d'explorer un domaine métier complexe</p>
+				</section>
+				<section>
+					<h2>C'est puissant</h2>
+					<p>Ca permet de modéliser un processus métier en quelques heures</p>
+					<p>... au lieu de plusieurs mois</p>
+				</section>
+				<section>
+					<h2>C'est dynamique</h2>
+					<p>L'idée est de mettre dans la même pièce
+						<ul>
+							<li>Les gens qui ont des <span style="color:blue">questions</span></li>
+							<li>Les gens qui ont des <span style="color:green">réponses</span></li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>C'est efficace</h2>
+					<p>Le modèle produit est parfaitement aligné avec l'implémentation</p>
+					<p>Ca permet également de délimiter les contextes et aggrégats</p>
+				</section>
+				<section>
+					<h2>C'est simple</h2>
+					<p>Le format est simple avec son code couleur</p>
+					<p>Pas de formalisme de type <span style="color:red">UML</span> ou <span style="color:red">BPM</span> souvent réservé aux experts</p>
+					<p>Tout le monde doit pouvoir participer</p>
+				</section>
+				<section>
+					<h2>C'est un bon moment passé ensemble</h2>
+					<p>On parle beaucoup, on creuse, on décortique</p>
+					<p>Et sans s'en rendre compte, on avance en posant les bonnes questions</p>
+					<p>Tout ce que vous avez jamais voulu savoir sur le domaine sans jamais avoir osé posé les questions</p>
+				</section>
+				<section>
+					<h1>Comment ça marche ?</h1>
+				</section>
+				<section>
+					<h2>Inviter les bonnes personnes</h2>
+					<p>Experts métier, PO, UI/UX, développeurs, qualifieurs, utilisateurs importants</p>
+					<p>C'est pour ça que vous êtes là</p>
+					<p>Il faudra faire regretter aux absents de ne pas être là !</p>
+				</section>
+				<section data-background="images/salle_vide.jpg">
+					<div style="background: rgba(0, 0, 0, 0.5)">
+						<h2>Préparer le terrain</h2>
+						<p>Un grand mur sur lequel on fixe un rouleau de papier</p>
+						<p>Des posts-its de différentes couleurs et des stylos pour tout le monde</p>
+						<p>Un manque cruel de chaises et d'endroits pour s'asseoir</p>
+					</div>
+				</section>
+				<section data-background="images/party.png">
+					<div style="background: rgba(0, 0, 0, 0.5)">
+						<h2>Bref ...</h2>
+						<p>La fête peut commencer !</p>
+					</div>
+				</section>
+				<section>
+					<h1>Les étapes</h1>
+				</section>
+				<section>
+					<h2>De l'art d'écrire sur un post-it</h2>
+					<p>Toujours en majuscules</p>
+					<p>Décoller le post-it latéralement pour éviter qu'il se corne</p>
+				</section>
+				<section>
+					<h2>Evènements</h2>
+					<h3>Post-its <span style="color:orange">orange</span></h3>
+					<p>Un évènement est une phrase au <strong>passé</strong></p>
+				</section>
+				<section>
+					<h2>Evènements</h2>
+					<p>Une personne joue le rôle de narrateur et décrit un parcours utilisateur</p>
+					<p>Dès qu'une autre personne repère un évènement, il le note sur un post-it</p>
+					<p>On colle les évènements sur le mur par ordre chronologique</p>
+					<p>Tout le monde participe à l'écriture des évènements</p>
+				</section>
+				<section>
+					<h2>Vocabulaire</h2>
+					<p>Le vocabulaire métier va émerger</p>
+					<p>On peut très bien avoir plusieurs termes pour la même notion</p>
+					<p>On décidera plus tard lequel on garde</p>
+				</section>
+				<section>
+					<h2>Narration</h2>
+					<p>On peut changer de narrateur ou raconter l'histoire d'un autre cas d'utilisation pour ajouter tous les évènements possibles</p>
+					<p>Ensuite on inverse la narration par rapport aux évènements au mur pour identifier les prérequis manquants</p>
+				</section>
+				<section>
+					<h2>Les commandes</h2>
+					<h2>Post-its <span style="color:blue">bleus</span></h2>
+					<p>Une commande est une phrase à l'infinitif</p>
+					<p>Très souvent à un évènement correspond une commande</p>
+					<p>On peut avoir une commande correspondre à deux évènements</p>
+				</section>
+				<section>
+					<h2>Les acteurs</h2>
+					<h2>Utilisateurs : petit post-it <span style="color:yellow">jaune</span></h2>
+					<h2>Systèmes externes : post-it <span style="color:purple">violet</span></h2>
+					<h2>Le temps : petit post-it <span style="color:yellow">jaune</span> avec une horloge</h2>
+					<p>Ils actionnent certaines commandes</p>
+				</section>
+				<section>
+					<h2>Les points de discorde !</h2>
+					<p>Si on passe trop de temps sur certains points, ce n'est pas grave, on mets un post-it <span style="color:pink">rose</span> pour le noter et on passe à autre chose !</p>
+					<p>Une réunion sera prévue spécialement pour discuter de chacun des points hors atelier</p>
+				</section>
+				<section>
+					<h2>Analysez votre narrateur !</h2>
+					<p>Recherchez la complexité accidentelle (celle qui peut être évitée)</p>
+					<p>Un évènement arrive-t-il sans raison métier valable ?</p>
+					<p>Votre narrateur est gêné ? Son langage corporel en dit long sur ce qu'il veut passer sous silence</p>
+					<p>Ca tombe bien, on est là pour creuser ces sujets</p>
+					<p>Méfiez-vous des acronymes, on est là pour rendre le métier compréhensible</p>
+				</section>
+				<section>
+					<h2>Goulots d'étranglement</h2>
+					<p>Une fois les évènements positionnés, les goulots apparaissent</p>
+					<p>Sagit-il d'un système externe ? D'une personne physique ?</p>
+				</section>
+				<section>
+					<h2>Aggrégats</h2>
+					<h2>grand post-it <span style="color:yellow">jaune</span></h2>
+					<p>Ensemble cohérent de données</p>
+					<p>Ne pas penser en terme de tables SQL</p>
+					<p>Qu'est-ce qui est <strong>modifié</strong> par les évènements et commandes ?</p>
+				</section>
+				<section>
+					<h2>Aggrégats</h2>
+					<h2>grand post-it <span style="color:yellow">jaune</span></h2>
+					<p>On casse la chronologie, on peut déplacer les évènements et commandes pour les regrouper par aggrégat</p>
+					<p>C'est maintenant qu'on peut donner un nom si une notion a plusieurs variantes</p>
+				</section>
+				<section>
+					<h2>Contextes bornés</h2>
+					<p>Découper les aggrégats par contexte métier</p>
+					<p>Un aggrégat peut exister dans plusieurs contextes, mais pas avec les mêmes informations</p>
+					<p>C'est souvent au niveau des points de discorde qu'un aggrégat appartient à plusieurs contextes</p>
+				</section>
+				<section>
+					<h2>Cas aux limites</h2>
+					<p>Pour ne pas perdre un précieux cas aux limites</p>
+					<p>Rédiger un test d'acceptance rapidement</p>
+				</section>
+				<section>
+					<h1>But de cet atelier</h1>
+				</section>
+				<section data-background="images/partage.jpg">
+					<div style="background: rgba(0, 0, 0, 0.5)">
+						<h2>But</h2>
+						<p>En apprendre le plus possible dans le minimum de temps</p>
+						<p>Partager la connaissance</p>
+						<p>Ne pas avoir un modèle complet (pas de temps pour ça)</p>
+						<p>Jeter le modèle... c'est très simple pour le refaire</p>
+						<p>On veut éviter de s'accrocher à un mauvais modèle</p>
+					</div>
+				</section>
+				<section>
+					<h2>Mais ...</h2>
+					<p>Souvent, de vieux problèmes sont résolus de cette manière</p>
+					<p>Laisser le modèle un petit moment au mur</p>
+				</section>
+				<section>
+					<h2>Bonus cachés</h2>
+					<p>L'implémentation peut émerger de la conception de l'atelier</p>
+					<p>Vous aurez des conversations très instructives avec les experts métier</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
